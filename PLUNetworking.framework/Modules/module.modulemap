@@ -1,0 +1,6 @@
+framework module PLUNetworking {
+  umbrella header "PLUNetworking.h"
+
+  export *
+  module * { export * }
+}
