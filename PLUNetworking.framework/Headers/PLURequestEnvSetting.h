@@ -38,25 +38,31 @@
 @property (nonatomic, weak) id<PLURequestEnvRequestDelegate> requestDelegate;
 
 //Default: @"http://loger.corp.plu.cn/"
-@property (nonatomic, strong) NSString *logerCorpPluUrl;
+@property (nonatomic, copy) NSString *logerCorpPluUrl;
 //Default: @"http://loger.plures.net/"
-@property (nonatomic, strong) NSString *logerPlures;
+@property (nonatomic, copy) NSString *logerPlures;
 //Default: @"http://playerlog.longzhu.com/"
-@property (nonatomic, strong) NSString *playerLogerUrl;
+@property (nonatomic, copy) NSString *playerLogerUrl;
 //Default: @"http://livestream.plu.cn/"
-@property (nonatomic, strong) NSString *LiveStreamPluUrl;
+@property (nonatomic, copy) NSString *LiveStreamPluUrl;
 //Default: @"http://configapi.plu.cn/"
-@property (nonatomic, strong) NSString *configApiPluUrl;
+@property (nonatomic, copy) NSString *configApiPluUrl;
 //Default: @"http://star.api.plu.cn/"
-@property (nonatomic, strong) NSString *starApiPluUrl;
+@property (nonatomic, copy) NSString *starApiPluUrl;
 //Default: @"http://liveapi.plu.cn/"
-@property (nonatomic, strong) NSString *liveApiPluUrl;
+@property (nonatomic, copy) NSString *liveApiPluUrl;
 //Default: @"http://mb.tga.plu.cn/"
-@property (nonatomic, strong) NSString *mbTGAPluUrl;
+@property (nonatomic, copy) NSString *mbTGAPluUrl;
 //Default: @"http://mbcdn.tga.plu.cn/"
-@property (nonatomic, strong) NSString *mbCDNTGAPluUrl;
+@property (nonatomic, copy) NSString *mbCDNTGAPluUrl;
 //Default: @"http://api.v.plu.cn/"
-@property (nonatomic, strong) NSString *apiVideoPluUrl;
+@property (nonatomic, copy) NSString *apiVideoPluUrl;
+//Default: @"http://mservice.longzhu.com/"
+@property (nonatomic, copy) NSString *getMyIp;
+//Default: @"v1/state"/ manual set @"player/pptv"  for PPTV
+@property (nonatomic, copy) NSString *playStateRouteName;
+//Default: @"v1/event"/ manual set @"lag/pptv" for PPTV
+@property (nonatomic, copy) NSString *playEventRouteName;
 
 +(PLURequestEnvSetting *)defaultRequestEnvSetting;
 

@@ -15,4 +15,5 @@
 #import "PLUDiagnoseRequest.h"
 #import "PLUPlayingRequest.h"
 #import "PLURequestEnvSetting.h"
+#import "PLUSimpleRequestSessionTask.h"
 
