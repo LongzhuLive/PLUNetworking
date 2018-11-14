@@ -35,6 +35,23 @@
                                         addParam: (NSDictionary *)addParam
                                        success:(void(^)(id responseObject))success
                                        failure:(void (^)(NSError *error))failure;
+
+/**
+ *  获取PK播放路线列表
+ *
+ *  @param roomId  房间ID
+ *  @param success NSDictionary
+ *  @param failure
+ *
+ *  @return PLURequestSessionTask
+ */
++(id<PLURequestSessionTask>)getEntireLivePKPlayUrls: (NSInteger)roomId
+                                       pkPeerRoomId: (NSInteger)pkPeerRoomId
+
+                                         addParam: (NSDictionary *)addParam
+                                          success:(void(^)(id responseObject))success
+                                          failure:(void (^)(NSError *error))failure;
+
 /**
  *  获取点播分辨率列表
  *

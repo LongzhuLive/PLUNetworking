@@ -104,6 +104,8 @@
                                          watchDirections: (NSString *)watchDirections
                                                    cover: (NSString *)cover
                                                     tags: (NSString *)tags
+                                                      addParam: (NSDictionary *)addParam
+
                                                  success:(void(^)(id responseObject))success
                                                  failure:(void (^)(NSError *error))failure;
 /**
@@ -118,10 +120,10 @@
  *  @return <#return value description#>
  */
 +(id<PLURequestSessionTask>)getEntireLiveEndLiveWithReason:(NSInteger)reason
-                                             reasonDesp:(NSString *)reasonDesp
-                                         liveSourceType: (NSInteger)liveSourceType
-                                                success:(void(^)(id responseObject))success
-                                                failure:(void (^)(NSError *error))failure;
+                                                reasonDesc:(NSString *)desc
+                                            liveSourceType:(NSInteger)liveSourceType
+                                                   success:(void(^)(id responseObject))success
+                                                   failure:(void (^)(NSError *error))failure;
 /**
  *  金山推流地址的更新
  *

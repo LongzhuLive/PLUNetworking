@@ -45,6 +45,8 @@
 @property (nonatomic, copy) NSString *playerLogerUrl;
 //Default: @"http://livestream.plu.cn/"
 @property (nonatomic, copy) NSString *LiveStreamPluUrl;
+//Default: @"http://eventapi.longzhu.com/"
+@property (nonatomic, copy) NSString *EventApiUrl;
 //Default: @"http://configapi.plu.cn/"
 @property (nonatomic, copy) NSString *configApiPluUrl;
 //Default: @"http://star.api.plu.cn/"
